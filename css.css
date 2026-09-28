@@ -1,0 +1,206 @@
+/* Styles de base */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+h1 h2 {
+    color: #444;
+    text-align: center;
+}
+
+p {
+    text-align: center;
+    margin: 10px 0;
+}
+
+a {
+    color: #007BFF;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+    font-size: 20px;
+    font-weight: bold;
+    color: #110228;
+    background-color: white;
+    border-radius: 10px solid;
+    transition: 1s;
+}
+
+/* Header */
+header {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #f7d794;
+    color: #0f0f0f;
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    background-image: url(image/WhatsApp\ Image\ 2024-11-16\ à\ 01.02.42_4b986a1c.jpg);
+    height: 200px;
+    margin-bottom: 30px;
+    margin-top: 0;
+    z-index: 1000;
+    width: 100%;
+}
+header div p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16ps;
+    font-weight: bold;
+    color: #110228;
+    box-shadow: 0 10px 10px rgba(4, 4, 4, 0.797);
+}
+
+header .container {
+    text-align: center;
+}
+
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    gap: 100px;
+
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav ul li:hover{
+    font-size: 20px;
+    font-weight: bolder;
+    border-radius: 10px;
+    background-color: white;
+    cursor: pointer;
+}
+
+/* Sections */
+section #accueil{
+    /* Section Bienvenue */
+ 
+    background-image: url('background-image.jpg'); /* Remplacez par l'image de l'amitié */
+    color: black;
+    text-align: center;
+    padding: 60px 20px;
+    position: relative;
+    padding: 40px 20px;
+    border-bottom: 1px solid #ddd;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 0 10px 10px rgba(230, 230, 16, 0.797);
+}
+
+#accueil::before {
+    position: relative;
+    top: 30px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Effet de superposition sombre */
+    z-index: 0;
+}
+
+
+#accueil .container {
+    position: relative;
+    z-index: 1;
+    box-shadow: 0 10px 10px rgba(19, 19, 18, 0.797);
+    background-color: #faa6a6;
+}
+
+#accueil h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: black
+    background-color rgba(230, 230, 16, 0.797);
+}
+
+#accueil p {
+    font-size: 1.2em;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+#accueil blockquote {
+    font-size: 1.5em;
+    font-style: italic;
+    margin: 20px auto;
+    color: #fce9e9;
+    border-left: 4px solid #f7d794;
+    padding-left: 15px;
+}
+
+#accueil a {
+    color: #f7d794;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#accueil a:hover {
+    text-decoration: underline;
+}
+
+
+#accueil button:hover {
+    background-color: #e0c17e;
+}
+
+
+section:nth-child(odd) {
+    background-color: #fff;
+    text-align: center;
+}
+
+section:nth-child(even) {
+    background-color: #f1f1f1;
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #444;
+    color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+    header nav{
+        display: none;
+        flex-direction: column;
+        min-height: 100vh;
+        font-size: 20x;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        height: 100vh;
+    }
+    header .container h1 p{
+        padding: 1rem;
+        text-decoration-color: white;
+    }
+
+    #accueil .container{
+        padding: 1rem;
+        background-color: white;
+    }
+    #accueil .container h2{
+        background-color: rgb(248, 246, 246);
+        text-shadow: #ddd;
+        text-transform: uppercase;
+    }
+}
